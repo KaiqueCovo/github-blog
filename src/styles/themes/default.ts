@@ -10,7 +10,7 @@ const colors = {
     text: "#AFC2D4",
     subtitle: "#C4D4E3",
     title: "#E7EDF4",
-  },
+  } as const,
 
   blue: "#3294F8",
 };
@@ -22,7 +22,7 @@ const fontSizes = {
   lg: "1.125rem",
   xl: "1.25rem",
   "2xl": "1.5rem",
-};
+} as const;
 
 export const defaultTheme = {
   colors,
