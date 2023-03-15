@@ -1,6 +1,14 @@
 import styled from "styled-components";
 
-export const ArticleContainer = styled.article`
+export const ArticlesContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  margin-top: 3rem;
+`;
+
+export const Article = styled.article`
   width: 26rem;
   height: 16.25rem;
   background-color: ${(props) => props.theme.colors.base.post};
