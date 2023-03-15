@@ -1,4 +1,4 @@
-import { Header, Articles, Profile } from "@/components";
+import { Header, Articles, Profile, Search } from "@/components";
 import { HomeContainer } from "./styles";
 
 export function Home() {
@@ -7,6 +7,7 @@ export function Home() {
       <Header />
       <HomeContainer>
         <Profile />
+        <Search />
         <Articles />
       </HomeContainer>
     </>
