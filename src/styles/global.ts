@@ -24,4 +24,26 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     font-size: ${(props) => props.theme.fontSizes.md};
   }
+
+  a {
+    text-decoration: none;
+
+    &::after {
+      content: '';
+      width: 0%;
+      height: .0625rem;
+      position: absolute;
+      left: 0;
+      bottom: -0.5rem;
+
+      background-color: ${(props) => props.theme.colors.blue};
+
+      transition: width 0.2s;
+    }
+
+    &:hover::after {
+      width: 100%;
+      transition: width 0.2s;
+    }
+  }
 `;

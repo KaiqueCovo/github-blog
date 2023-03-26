@@ -49,25 +49,6 @@ export const ProfileName = styled.div`
     font-weight: 700;
 
     text-transform: uppercase;
-    text-decoration: none;
-
-    &::after {
-      content: "";
-      width: 0%;
-      height: 0.0625rem;
-      position: absolute;
-      left: 0;
-      bottom: 0.5rem;
-
-      background-color: ${(props) => props.theme.colors.blue};
-
-      transition: width 0.2s;
-    }
-
-    &:hover::after {
-      width: 100%;
-      transition: width 0.2s;
-    }
   }
 `;
 
