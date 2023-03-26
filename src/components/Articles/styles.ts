@@ -13,7 +13,7 @@ export const Article = styled.article`
   height: 16.25rem;
   background-color: ${(props) => props.theme.colors.base.post};
 
-  border-radius: 0.625rem;
+  border-radius: 10px;
   border: 2px solid ${(props) => props.theme.colors.base.post};
   padding: 2rem;
 
